@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="8dp" android:layout_width="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+
+      <TextView
+          android:id="@+id/numberid"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="36dp"
+          android:text="#0000000"
+          app:layout_constraintStart_toStartOf="@+id/folder"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <ImageView
+          android:id="@+id/folder"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/numberid"
+          app:srcCompat="@drawable/folder2_open_fill" />
+
+      <TextView
+          android:id="@+id/vehicleType"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Бульдозер"
+          app:layout_constraintEnd_toEndOf="@+id/numberid"
+          app:layout_constraintStart_toStartOf="@+id/folder"
+          app:layout_constraintTop_toBottomOf="@+id/folder" />
+
+      <ImageButton
+          android:id="@+id/justOneButton"
+          android:layout_width="101dp"
+          android:layout_height="54dp"
+          android:layout_marginTop="56dp"
+          android:background="@color/white"
+          app:layout_constraintEnd_toEndOf="@+id/vehicleType"
+          app:layout_constraintHorizontal_bias="0.161"
+          app:layout_constraintStart_toStartOf="@+id/vehicleType"
+          app:layout_constraintTop_toBottomOf="@+id/vehicleType"
+          app:srcCompat="@drawable/frame_34010" />
+
+      <TextView
+          android:id="@+id/kindofwork"
+          android:layout_width="72dp"
+          android:layout_height="21dp"
+          android:layout_marginTop="16dp"
+          android:text="TextView"
+          app:layout_constraintEnd_toEndOf="@+id/vehicleType"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/vehicleType"
+          app:layout_constraintTop_toBottomOf="@+id/vehicleType" />
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
